@@ -20,14 +20,6 @@ pip install flask openai torch transformers==4.36.2 faster-whisper pydub sentenc
 ```
 
 
-4. **Set OpenAI API Key**
-
-```bash
-set OPENAI_API_KEY="your_api_key_here"   # Windows
-export OPENAI_API_KEY="your_api_key_here" # Linux / Mac
-```
-
----
 
 ## Running the App
 
