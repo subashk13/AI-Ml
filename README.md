@@ -53,19 +53,3 @@ Meeting Summarizer/
 
 ---
 
-## License
-
-MIT License
-
----
-
-Enjoy summarizing your meetings! 🚀
-
-```
-
----
-
-If you want, I can also **create a shorter “copy-paste friendly” version** for your friend that skips advanced troubleshooting and just works on Windows.  
-
-Do you want me to do that?
-```
