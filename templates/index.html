@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Summarizer</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/scripts.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Audio Summarizer</h1>
+
+        <!-- File Upload -->
+<form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+    <label for="audio" class="custom-file-upload">
+        Choose Audio File
+    </label>
+    <input type="file" name="audio" id="audio" required style="display: none;">
+    <button type="submit">Submit</button>
+</form>
+
+
+        <!-- Recording Section -->
+        <form id="record-form">
+            <h2>OR</h2>
+            <div class="record-container">
+                <div class="mic-icon"></div>
+                <canvas id="waveform"></canvas>
+                <div class="record-buttons">
+                    <h2> Record Audio</h2>
+                    <button type="button" id="start-recording">Start Recording</button>
+                    <button type="button" id="stop-recording" disabled>Stop</button>
+                    <p id="recording-status">Hit that record button!</p>
+                </div>
+            </div>
+            
+        </form>
+
+        <style>
+    #submit-recorded, #result {
+        display: block;   /* Ensures the elements take up full width */
+        margin: 20px auto; /* Centers them horizontally and adds vertical spacing */
+        text-align: center; /* Centers the text/content inside */
+    }
+</style>
+
+        
+</body>
+</html>

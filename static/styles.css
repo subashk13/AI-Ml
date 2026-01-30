@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('/static/images/design.webp') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #0a0f1f; /* Fallback color */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #1a1e32;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons */
+#record-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between buttons */
+    margin-top: 15px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 140px; /* Same size for both buttons */
+    text-align: center;
+}
+
+/* Start Recording Button */
+#start-recording {
+    background: #28a745;
+    color: white;
+}
+
+/* Stop Recording Button */
+#stop-recording {
+    background: #ff0077;
+    color: white;
+}
+
+/* Hover Effects */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Disabled Button */
+button:disabled {
+    background: #444;
+    cursor: not-allowed;
+}
+
+/* File Input Button */
+.custom-file-upload {
+    display: inline-block;
+    width: 100%;
+    max-width: 200px;
+    padding: 12px 20px;
+    background: #2e3b72;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.custom-file-upload:hover {
+    opacity: 0.8;
+}
+
+#audio {
+    display: none; /* Hide the default file input */
+}
+
+#upload-form button {
+    background: #4d5757;
+    color: white;
+    border: none;
+}
